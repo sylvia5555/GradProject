@@ -1,0 +1,103 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: #a52a2a; /* لون الهيدر الأساسي */
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* History Section */
+  .about-history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .history-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .history-content h2 {
+    font-size: 2rem;
+    color: #a52a2a; /* لون الهيدر الأساسي */
+  }
+  
+  .history-content p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .history-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .history-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mission and Vision Section */
+  .about-mission-vision {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Exhibits Section */
+  .about-exhibits {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Contact Section */
+  .about-contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-history {
+      flex-direction: column;
+    }
+  
+    .history-content, .history-image {
+      flex: 1 100%;
+    }
+  }
+  p{
+    color: gray !important;
+  }

@@ -1,0 +1,67 @@
+/* Basic styles for the container */
+.create-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Wrapper to hold image and form side by side */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+/* Left Side Image */
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100px); /* Start from left for image */
+  transition: transform 1s ease-out;
+}
+
+.account-image {
+  max-width: 100%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+/* Form Section */
+.form-side {
+  flex: 1;
+  padding-left: 30px;
+  transform: translateX(100px); /* Start from right */
+  transition: transform 1s ease-out;
+}
+form label{
+  text-align: left;
+}
+/* When content is shown, both form and image slide into place */
+.content-wrapper.show .image-side {
+  transform: translateX(0); /* Image slides into position */
+}
+
+.content-wrapper.show .form-side {
+  transform: translateX(0); /* Form slides into position */
+}
+
+.content-wrapper.show {
+  opacity: 1;
+}
+
+@media (max-width:992px) {
+  .content-wrapper{
+    flex-direction: column !important;
+  }
+  .image-side{
+    display: none !important;
+  }
+}
