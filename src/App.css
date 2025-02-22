@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: orpheuspro; 
 }
 :root{
   --main:linear-gradient(135deg, #edbc29, #c49a1d);

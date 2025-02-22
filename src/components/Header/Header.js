@@ -20,6 +20,9 @@ const Header = () => {
         <a href="#gallery">{language === "en" ? "Gallery" : "المعرض"}</a>
         <a href="#contact">{language === "en" ? "Contact" : "تواصل معنا"}</a>
         <a href="/Events">{language === "en" ? "Events" : "المناسبات"}</a>
+        <a href="/Ticket">
+          {language === "en" ? "Buy a ticket?" : "اشتر تذكرة؟"}
+        </a>
       </nav>
       <div className="header-right">
         <select
