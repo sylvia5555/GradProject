@@ -1,0 +1,22 @@
+.event-detail img{
+    width: 80%;
+    left: 105px;
+    position: relative;
+    height: 362px;
+    border-radius: 13px;
+    margin: 20px auto;
+}
+
+
+
+@media (max-width:776px) {
+    .event-detail{
+        padding-left: auto !important;
+    }
+    .event-detail img{
+        width: 300px !important;
+    }
+    .event-detail .event-description{
+        width: 280px !important;
+    }
+}

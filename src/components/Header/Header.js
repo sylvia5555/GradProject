@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
 import "./Header.css";
-
+import logo from "../../Assets/gallery/logo2.png"
 const Header = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
@@ -11,15 +11,16 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">
-        {language === "en" ? "Egyptian Museum" : "المتحف المصري"}
+      <div className="logo" >
+       <img src={logo} style={{width:"60px"}}/>
       </div>
       <nav className="nav-links">
         <a href="/">{language === "en" ? "Home" : "الرئيسية"}</a>
         <a href="/about">{language === "en" ? "About" : "عن المتحف"}</a>
         <a href="#gallery">{language === "en" ? "Gallery" : "المعرض"}</a>
-        <a href="#contact">{language === "en" ? "Contact" : "تواصل معنا"}</a>
+        <a href="/contact">{language === "en" ? "Contact" : "تواصل معنا"}</a>
         <a href="/Events">{language === "en" ? "Events" : "المناسبات"}</a>
+        <a href="/sections">{language === "en" ? "Departments" : "أقسام المتحف"}</a>
       </nav>
       <div className="header-right">
         <select

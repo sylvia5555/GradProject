@@ -3,11 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-:root{
-  --main:linear-gradient(135deg, #edbc29, #c49a1d);
-  --linear-gradient:linear-gradient(135deg, #edbc29, #c49a1d);
-  --linear2:linear-gradient(135deg, #29bced, #1d73c4);
+:root {
+  --linear-gradient: linear-gradient(135deg, #EDBC29, #C49A1D) !important;
+  --main: #F9D77E;
 }
+
 .head{
   font-size: 2rem; /* حجم النص */
   font-weight: bold;

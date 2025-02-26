@@ -1,4 +1,8 @@
-/* Basic styles for the container */
+
+body{
+  /* background-image: url(../../Assets//gallery//background.jpg);
+  background-size: cover; */
+}
 .create-account-container {
   display: flex;
   justify-content: center;
