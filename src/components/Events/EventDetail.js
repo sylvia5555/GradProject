@@ -5,7 +5,7 @@ import "./Events.css";
 
 const EventDetail = () => {
   const { id } = useParams(); // استخراج ID الحدث من الرابط
-  const event = EventsData.find(event => event.id === parseInt(id)); // العثور على الحدث بناءً على الـ ID
+  const event = EventsData.find((event) => event.id === parseInt(id)); // العثور على الحدث بناءً على الـ ID
 
   return (
     <div className="event-detail">

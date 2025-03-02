@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import TicketsData from "./Ticketsdata.js";
 import "./Ticket.css";
+// import TicketDetails from "./Ticketdetails";
+
 const Ticket = () => {
   return (
     <>
@@ -7,26 +12,26 @@ const Ticket = () => {
         <p>PLAN YOUR VISIT</p>
         <h1>Buy A Ticket</h1>
       </div>
+
       <div className="ticket-container">
         <h2>
           Take A Look At the <span>OFFERS!</span>
         </h2>
         <div className="cards">
           <div className="ticket-card" id="ticket-card1">
-            <img
-              src="https://www.visit-gem.com/storage/informations/tours-Banner-en.png"
-              alt="briefTours"
-            />
-            <h3>Gem Main Galliries</h3>
-            <p>EGP 100</p>
-          </div>
-          <div className="ticket-card" id="ticket-card2">
-            <img
-              src="https://www.visit-gem.com/storage/informations/child-Banner_en.png"
-              alt="briefChildren"
-            />
-            <h3>Gem Children's Museum</h3>
-            <p>EGP 100</p>
+            {TicketsData.map((ticket) => (
+              <motion.div
+                key={ticket.id}
+                className="ticket-card"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <img src={ticket.banner} alt="briefTours" />
+                <h3>{ticket.title}</h3>
+                <p>EGP 100 ~ 600</p>
+              </motion.div>
+            ))}
           </div>
         </div>
         <div className="ticket-details">
