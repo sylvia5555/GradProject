@@ -17,32 +17,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  // const [isPlaying, setIsPlaying] = useState(false);
-  // const audio = new Audio(audioFile);
-
-  // const playSound = () => {
-  //   audio.play().catch((error) => {
-  //     console.error("خطأ في تشغيل الصوت:", error);
-  //   });
-  //   setIsPlaying(true);
-  // };
-
-  // useEffect(() => {
-  //   // إضافة مستمع لحدث النقر (click) في الصفحة
-  //   const handleClick = () => {
-  //     if (!isPlaying) {
-  //       playSound();  // تشغيل الصوت بعد النقر
-  //     }
-  //   };
-
-  //   // إضافة مستمع لحدث النقر في الجسم
-  //   document.body.addEventListener('click', handleClick);
-
-  //   // تنظيف الحدث عند مغادرة المكون
-  //   return () => {
-  //     document.body.removeEventListener('click', handleClick);
-  //   };
-  // }, [isPlaying]);
+  
 
   return (
     <LanguageProvider>
