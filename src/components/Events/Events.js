@@ -25,7 +25,7 @@ const Events = () => {
             <div className="event-content">
               <h3 className="event-title">{event.title}</h3>
               <p className="event-description">{event.sidepara.slice(0, 100)}...</p> {/* جزء من الوصف */}
-              <Link to={`/event/${event.id}`} className="event-btn">
+              <Link to={`/event/${event.id}`} className="event-btn linear-gradient">
                Read More
               </Link>
             </div>
