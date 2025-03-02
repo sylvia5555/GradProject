@@ -1,0 +1,138 @@
+.ticket-heading {
+    height: 60vh;
+    width: 100%;
+    background-image: url('../../Assets/ticketHeading.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ticket-heading h1 {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.ticket-heading p {
+    font-size: 1.4rem;
+    /* padding-top: 10%; */
+    text-align: center;
+
+}
+
+.ticket-heading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -2;
+}
+
+.ticket-container {
+    padding: 5rem 2rem;
+    height: 100vh; 
+    /* background-image: url(../../Assets/ticket-bg.png); */
+    /* background-size: cover; */
+}
+h2 {
+    color: #212121;
+    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+}
+
+ h2:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0; 
+    width: 50%;
+    height: 2px;
+    background-color: #212121;
+
+}
+
+h2 span {
+    color: #f0ba19;
+    size: 2rem;
+}
+
+.ticket-container img {
+    object-fit: cover;
+}
+
+.cards {
+    padding: 5rem 0;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem; 
+    flex-wrap: wrap;
+}
+
+.cards img {
+    width: 30rem; 
+}
+
+.cards .ticket-card {
+    border: 1px solid #212121;
+    border-right: transparent;
+    border-right: transparent;
+    padding: 3rem; 
+    padding-left: 5rem;
+    width: 30rem;
+    height: 20rem;
+    background-size: cover;
+}
+
+.cards .ticket-card h3 {
+    padding-top: 3rem;
+}
+
+
+.ticket-details {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 5rem 0
+}
+
+.details-content {
+    width: 40%;
+}
+
+.details-img {
+    background-image: url(../../Assets/gallary.jpg);
+    width: 50%;
+    background-size: cover;
+    height: 80%;
+}
+
+
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.details-content h2 {
+    margin-bottom: 4rem;
+}
+
+
+.details-content p {
+    /* list-style-image: url(../../Assets/ticket-bg3.png); */
+    font-size: 1.3rem;
+    padding-bottom: 0;
+}
