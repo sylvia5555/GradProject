@@ -25,9 +25,15 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
         <div className="contact-info">
-          <p><FaMapMarkerAlt className="icon" /> 123 Museum Street, Cairo, Egypt</p>
-          <p><FaEnvelope className="icon" /> info@museum.com</p>
-          <p><FaPhone className="icon" /> +20 123 456 789</p>
+          <p>
+            <FaMapMarkerAlt className="icon" /> 123 Museum Street, Cairo, Egypt
+          </p>
+          <p>
+            <FaEnvelope className="icon" /> info@museum.com
+          </p>
+          <p>
+            <FaPhone className="icon" /> +20 123 456 789
+          </p>
         </div>
       </div>
     </section>

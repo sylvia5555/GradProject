@@ -12,7 +12,6 @@ const Ticket = () => {
         <p>PLAN YOUR VISIT</p>
         <h1>Buy A Ticket</h1>
       </div>
-
       <div className="ticket-container">
         <h2>
           Take A Look At the <span>OFFERS!</span>
